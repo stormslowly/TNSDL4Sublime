@@ -1,0 +1,12 @@
+<snippet>
+	<content><![CDATA[
+    TASK tu_set_state_tracing_on();
+    TASK tu_set_input_tracing_on();
+    TASK tu_set_output_tracing_on();
+    TASK tu_set_log_writing_tracing_on();
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>openmsg</tabTrigger> -->
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.tnsdl</scope>
+</snippet>

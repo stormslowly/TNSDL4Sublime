@@ -1,0 +1,17 @@
+<snippet>
+	<content><![CDATA[
+TASK  ${1:this}:=0;
+WHILE(  ${2:condtion}  );
+	
+	${3:loop-body}
+
+	TASK  ${1:this} :=  ${1:this} +1;
+ENDWHILE;
+
+
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>WHILE</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>

@@ -1,0 +1,122 @@
+{
+    "fileTypes": [
+        "sdl", 
+        "sdt", 
+        "spd", 
+        "sdt", 
+        "sst", 
+        "sed"
+    ], 
+    "name": "tnsdl", 
+    "patterns": [
+        {
+            "comment": "TNSDL type keyword", 
+            "match": "\\b(COMMENT|STRUCT|ENDSTRUCT|TO|OUTPUT|NEXTSTATE|FPAR|CALL|TASK|PROGRAMBLOCK|IMPLEMENTATION|ENDIMPLEMENTATION|MODULE|ENDPROCEDURE|START|RETURNS)\\b", 
+            "name": "keyword.source.tnsdl"
+        }, 
+        {
+            "match": "\\b(NIL|T|F|pid|word|dword|byte|bool|bytepointer|[a-zA-Z]+[a-zA-Z0-9_]*_t)\\b", 
+            "name": "storage.type.tnsdl"
+        }, 
+        {
+            "match": ":=", 
+            "name": "keyword.operator.assignment.tnsdl"
+        }, 
+        {
+            "comment": "TNSDL type keyword", 
+            "match": "\\b(PRIORITY|DESTROY_MSG_IF_NOT_WO_STATE|[a-zA-Z]+[a-zA-Z0-9_]*_ec|[a-zA-Z]+[a-zA-Z0-9_]*_c|SENDER_PHYS_COMPUTER|SENDER|CONSTANT|ENDTYPE|REPRESENTATION)\\b", 
+            "name": "constant.language.tnsdl"
+        }, 
+        {
+            "match": "\\b(=|<|>|>=|<=|/=)", 
+            "name": "keyword.operator.comparison.tnsdl"
+        }, 
+        {
+            "match": "\\b(DECISION|ELSE|ENDDECISION|WHILE|ENDWHILE|RETURN)\\b", 
+            "name": "keyword.control.tnsdl"
+        }, 
+        {
+            "match": "\\b(SET|-\\>|\\+|\\-|ADDPTR|POINTER|AND|OR|NOT|SIZEOF)\\b", 
+            "name": "keyword.operator.arithmetic.tnsdl"
+        }, 
+        {
+            "match": "\\b(DCL|SAVE|WITHWARMING|IN|OUT)\\b", 
+            "name": "storage.modifier.tnsdl"
+        }, 
+        {
+            "begin": "/\\*", 
+            "end": "\\*/", 
+            "name": "comment.block.tnsdl"
+        }, 
+        {
+            "captures": {
+                "1": {
+                    "name": "keyword.source.tnsdl"
+                }, 
+                "2": {
+                    "name": "entity.name.function.tnsdl"
+                }
+            }, 
+            "match": "\\b(PROCEDURE)\\s+([a-zA-Z_]\\w*);", 
+            "name": "meta.function.tnsdl"
+        }, 
+        {
+            "captures": {
+                "1": {
+                    "name": "keyword.source.tnsdl"
+                }, 
+                "2": {
+                    "name": "entity.name.function.tnsdl"
+                }
+            }, 
+            "match": "\\b(INPUT)\\s+([a-zA-Z_]\\w*)", 
+            "name": "meta.function.tnsdl"
+        }, 
+        {
+            "captures": {
+                "1": {
+                    "name": "support.function.any-method.tnsdl"
+                }, 
+                "2": {
+                    "name": "variable.parameter.function.tnsdl"
+                }
+            }, 
+            "match": "([a-zA-Z_]\\w*)\\s*(\\(.*\\))", 
+            "name": "meta.function.tnsdl"
+        }, 
+        {
+            "captures": {
+                "1": {
+                    "name": "keyword.source.tnsdl"
+                }, 
+                "2": {
+                    "name": "entity.name.function.tnsdl"
+                }
+            }, 
+            "match": "\\b(SIGNAL)\\s+([a-zA-Z_][a-zA-Z0-9_]*)", 
+            "name": "meta.function.tnsdl"
+        }, 
+        {
+            "captures": {
+                "1": {
+                    "name": "keyword.source.tnsdl"
+                }, 
+                "2": {
+                    "name": "entity.name.function.tnsdl"
+                }
+            }, 
+            "match": "\\b(TYPE)\\s+([a-zA-Z_][a-zA-Z0-9_]*)", 
+            "name": "meta.function.tnsdl"
+        }, 
+        {
+            "match": ",", 
+            "name": "punctuation.seperator.property.tnsdl"
+        }, 
+        {
+            "match": "\\b(0(x|X)[0-9a-fA-F]+)\\b", 
+            "name": "constant.numeric.tnsdl"
+        }
+    ], 
+    "scopeName": "source.tnsdl", 
+    "uuid": "8850f81b-44db-4ea2-ae88-71f352d66787"
+}
