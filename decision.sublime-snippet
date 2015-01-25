@@ -1,17 +1,12 @@
 <snippet>
 	<content><![CDATA[
-TASK  ${1:this}:=0;
-WHILE(  ${2:condition}  );
-	
-	${3:loop-body}
-
-	TASK  ${1:this} :=  ${1:this} +1;
-ENDWHILE;
-
-
+DECISION ${1: condition};
+(${2:value}):
+	${3}
+ENDDECISION;
 ]]></content>
 	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
-	<tabTrigger>WHILE</tabTrigger>
+	<tabTrigger>DECI</tabTrigger>
 	<!-- Optional: Set a scope to limit where the snippet will trigger -->
-	<!-- <scope>source.python</scope> -->
+	<scope>source.tnsdl</scope>
 </snippet>
