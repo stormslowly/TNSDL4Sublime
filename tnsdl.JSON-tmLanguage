@@ -40,7 +40,7 @@
             "name": "keyword.operator.arithmetic.tnsdl"
         }, 
         {
-            "match": "\\b(DCL|SAVE|WITHWARMING|IN|OUT)\\b", 
+            "match": "\\b(DCL|SAVE|WITHWARMING|IN|OUT|VIEWED|TIMER)\\b", 
             "name": "storage.modifier.tnsdl"
         }, 
         {

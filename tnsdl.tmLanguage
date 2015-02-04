@@ -63,7 +63,7 @@
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>\b(DCL|SAVE|WITHWARMING|IN|OUT)\b</string>
+			<string>\b(DCL|SAVE|WITHWARMING|IN|OUT|VIEWED|TIMER)\b</string>
 			<key>name</key>
 			<string>storage.modifier.tnsdl</string>
 		</dict>
