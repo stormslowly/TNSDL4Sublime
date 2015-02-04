@@ -2,14 +2,14 @@
 	<content><![CDATA[
 PROCEDURE ${1: proc_name};
 FPAR
-	IN   ${2:para}   ${3:type};
+  IN   ${2:para}   ${3:type};
 RETURNS 
-    ${4:ret};
+  ${4:ret};
 DCL
-    ${5:vars}		${6:var_type};
-    
+  ${5:vars}		${6:var_type};
+
 START;
-    ${7}
+  ${7}
 ENDPROCEDURE ${1: proc_name};
 ]]></content>
 	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->

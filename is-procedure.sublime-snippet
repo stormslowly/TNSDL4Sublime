@@ -2,9 +2,9 @@
 	<content><![CDATA[
 PROCEDURE ${1:proc_name};
 FPAR
-    IN ${2:proc_para} 	${3:para_tyep};
+  IN ${2:proc_para} 	${3:para_tyep};
 RETURNS
-    bool;
+  bool;
 
 START;
   ${4}
